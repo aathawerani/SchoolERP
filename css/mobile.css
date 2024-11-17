@@ -1,0 +1,414 @@
+
+:root {
+  --green: #00884C;
+  --pastelGreen: #e9fce4;
+  --font-size: 1.2em;
+  --neonGreen : #0FFF50
+}
+
+html {
+  height: 96%;
+}
+
+body {
+  padding: 5%;
+  font-family: Helvetica, Verdana, Sans-serif;
+  max-width: fill;
+  max-height: fill;
+  margin: auto;
+  height: 100%;
+  background-color: white;
+}
+
+.btn {
+  font-family: Helvetica, Verdana, Sans-serif;
+  display: flex;
+  background-color: var(--green);
+  border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: regular;
+  padding: 5px 10px;
+  margin: 5px;
+  flex-grow: 4;
+  border: 1px solid var(--green);
+  box-shadow: 2px 3px 3px 1px gray;
+}
+
+@media only screen and (min-width:501px) {
+  .btn {
+    font-size: 30px;
+  }
+
+  .bookTitle {
+    font-size: 22px;
+  }
+
+  .bookavl {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .abtn {
+    font-size: 18px;
+  }
+
+  .pageTitle {
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (max-width:500px) {
+  .btn {
+    font-size: 22px;
+  }
+
+  .bookTitle {
+    font-size: 18px;
+  }
+
+  .bookavl {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .abtn {
+    font-size: 14px;
+  }
+
+  .pageTitle {
+    font-size: 14px;
+  }
+
+}
+
+.btn:hover {
+  background-color: #77a809;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+img {
+  padding: 20px;
+  margin: 10px;
+}
+
+.vflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+
+.hflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  width: 100%;
+  height: 25%;
+}
+
+.bookTitle {
+  width: 80%;
+  font-family: "Trebuchet MS";
+  font-weight: regu lar;
+}
+
+.bookavl {
+  width: 15%;
+  color: blue;
+  border: 1px solid black;
+  background-color: white;    /* height: 100%; */
+  text-align: center;
+  padding: 0px 1px;
+}
+
+.title {
+  font-family: Helvetica, Verdana, Sans-serif;
+  word-spacing: 2px;
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  margin: 5px;
+  padding: 2px 15px;
+}
+
+*/
+#areaContainer #clusterContainer {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#lvl2areaCon #lvl2clusterCon #lvl2schoolCon #lvl2d #lvl2e #lvl2unitCon {
+  height: 15%;
+}
+
+.abtn {
+  font-weight: bold;
+  color: #000000;
+  background-color: var(--pastelGreen);
+  padding: 4px 8px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  margin: 5px;
+  flex-wrap: wrap;
+}
+
+.abtn:hover {
+  padding: 10px 20px;
+  transform: translateY(-0px);
+  background-color: #fff;
+  color: var(--green);
+  border: none;
+}
+
+u {
+  font-family: 'Trebuchet MS', serif;
+  font-size: 100%;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  color: black;
+  text-decoration: underline;
+}
+
+.pageTitle {
+  font-family: 'Trebuchet MS', serif;
+  text-align: center;
+  align-items: center;
+  word-spacing: 3px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--green);
+  height: 8%;
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+
+.hflexBook {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  width: 100%;
+  height: 20%;
+  background-color: var(--pastelGreen);
+  margin: 2px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 4px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 50%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.modalBtn {
+  height: 1cm;
+}
+
+.modalMsg {
+  font-family: 'Trebuchet MS', serif;
+  font-size: 0.9em;
+}
+
+#saveBtn {
+  border-radius: 30px;
+  font-weight: bolder;
+  border: 1px solid green;
+  background-color: green;
+  color: #FFF;
+}
+
+#saveBtn:disabled, #saveBtn[disabled] {
+  border: 1px solid gray;
+  background-color: gray;
+  color: #000000;
+}
+
+#cancelBtn {
+  border-radius: 30px;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  font-size: 100%;
+}
+
+#inputNumber {
+  text-align: center;
+  font-size: 100%;
+}
+
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:20px;
+  right:20px;
+  background-color:var(--neonGreen);
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+  font-weight: bolder;
+}
+
+.my-float{
+  margin-top:18px;
+}
+
+.hflexBook[data_subject="Computer"] {
+  background-color: lightskyblue;
+}
+.hflexBook[data_subject="English"] {
+  background-color: lightcoral;
+}
+.hflexBook[data_subject="Ethics"] {
+  background-color: lightcyan;
+}
+.hflexBook[data_subject="Islamiat"] {
+  background-color: lightgoldenrodyellow;
+}
+.hflexBook[data_subject="Math"] {
+  background-color: lightgray;
+}
+.hflexBook[data_subject="Nazra"] {
+  background-color: lightblue;
+}
+.hflexBook[data_subject="Science"] {
+  background-color: whitesmoke;
+}
+.hflexBook[data_subject="Sindhi"] {
+  background-color: lightsalmon;
+}
+.hflexBook[data_subject="SSt"] {
+  background-color: lightgreen;
+}
+.hflexBook[data_subject="Student Development"] {
+  background-color: lightyellow;
+}
+.hflexBook[data_subject="Uraan - English"] {
+  background-color: lightpink;
+}
+.hflexBook[data_subject="Uraan - Math"] {
+  background-color: white;
+  border: lightgray solid 1px;
+}
+.hflexBook[data_subject="Uraan - Urdu"] {
+  background-color: paleturquoise;
+}
+.hflexBook[data_subject="Urdu"] {
+  background-color: papayawhip;
+}
+
+
+/*
+.hflexBook[data_class="6"] {
+  background-color: lightskyblue;
+}
+
+.hflexBook[data_class="-1"] {
+  background-color: lightskyblue;
+}
+
+.hflexBook[data_class="7"] {
+  background-color: lightpink;
+}
+
+.hflexBook[data_class="0"] {
+  background-color: lightpink;
+}
+
+.hflexBook[data_class="8"] {
+  background-color: lightcyan;
+}
+
+.hflexBook[data_class="1"] {
+  background-color: lightcyan;
+}
+
+.hflexBook[data_class="9"] {
+  background-color: lightgoldenrodyellow;
+}
+
+.hflexBook[data_class="2"] {
+  background-color: lightgoldenrodyellow;
+}
+
+.hflexBook[data_class="3"] {
+  background-color: lightseagreen;
+}
+
+.hflexBook[data_class="4"] {
+  background-color: lightcoral;
+}
+
+.hflexBook[data_class="4"] {
+  background-color: lightsalmon;
+}
+ */

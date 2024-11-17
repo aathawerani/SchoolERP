@@ -1,0 +1,19 @@
+Client ID	AYyTcXaK8p-m8boHvujpPBuB8bBhXpVuKZVCVJIS0ws
+Client Secret	hX37249Rf7z6PQxyx3ryHal5C0qRE3k6kf3Zgj4vZnE
+
+Make sure to save this secret - it will not be accessible again
+Permissions	
+
+Redirect URIs	
+https://schinv.tcf.org.pk:3443/
+
+Consumer Key:
+DcU5lf7RnT5gww1F4PW0Bw1pt01U6qlh84QH4gvU
+Consumer Secret:
+VU8mjCU3N0OTKq1E4tvjVSHyWCHvu82Rv1LbWMSg
+Request Token URL:
+https://www.openstreetmap.org/oauth/request_token
+Access Token URL:
+https://www.openstreetmap.org/oauth/access_token
+Authorise URL:
+https://www.openstreetmap.org/oauth/authorize
